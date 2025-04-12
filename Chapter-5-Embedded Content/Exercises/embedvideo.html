@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Embedded Video</title>
+<style>
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #1c5701; /* Optional background color */;
+  }
+
+  video {
+    max-width: 500px; /* Adjust as needed */
+    max-height: 500px; /* Adjust as needed */
+    display: block; /* Ensure no extra space below the video */
+    border: solid black;
+    border-radius: 20px;
+  }
+</style>
+</head>
+<body>
+
+<video controls loop poster="steve.jpg">
+  <source src="minecraft.mp4.mp4" type="video/mp4">
+</video>
+
+</body>
+</html>
