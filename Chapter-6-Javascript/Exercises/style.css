@@ -1,0 +1,96 @@
+/* Basic reset to ensure consistent styling across browsers */
+body, h1, p, label, input, button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: sans-serif;
+    box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+}
+
+/* Styles for the body element */
+body {
+    background-color: #5e5e5e; /* Light grey background */
+    display: flex; /* Enable flexbox for centering */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    min-height: 100vh; /* Ensure the body takes up at least the full viewport height */
+    padding: 20px; /* Add some padding around the content */
+}
+
+/* Styles for the main calculator container */
+.calculator-container {
+    background-color: #ffffff; /* White background for the calculator */
+    padding: 30px; /* Padding inside the calculator container */
+    border-radius: 8px; /* Rounded corners for the container */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    width: 350px; /* Fixed width for the calculator */
+    text-align: center; /* Center text within the container */
+}
+
+/* Styles for the heading */
+h1 {
+    color: #333; /* Dark grey heading text */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+/* Styles for the input group (label and input) */
+.input-group {
+    margin-bottom: 15px; /* Space below each input group */
+    text-align: left; /* Align text within the input group to the left */
+}
+
+/* Styles for the label */
+label {
+    display: block; /* Make the label take up the full width */
+    margin-bottom: 5px; /* Space below the label */
+    color: #555; /* Medium grey label text */
+    font-weight: bold; /* Make the label text bold */
+}
+
+/* Styles for the number input fields */
+input[type="number"] {
+    width: 100%; /* Make the input take up the full width of its container */
+    padding: 10px; /* Padding inside the input field */
+    border: 1px solid #ccc; /* Light grey border */
+    border-radius: 4px; /* Rounded corners for the input field */
+    font-size: 16px; /* Font size of the input text */
+}
+
+/* Focus effect for input fields */
+input[type="number"]:focus {
+    outline: none; /* Remove the default focus outline */
+    border-color: #007bff; /* Blue border color on focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Subtle blue shadow on focus */
+}
+
+/* Styles for the button */
+button {
+    background-color: #006e14; /* Blue background color for the button */
+    color: #fff; /* White text color for the button */
+    padding: 12px 20px; /* Padding inside the button */
+    border-radius: 4px; /* Rounded corners for the button */
+    cursor: pointer; /* Change cursor to a pointer on hover */
+    font-size: 16px; /* Font size of the button text */
+    transition: background-color 0.3s ease; /* Smooth transition for the hover effect */
+}
+
+/* Hover effect for the button */
+button:hover {
+    background-color: #0056b3; /* Darker blue background on hover */
+}
+
+/* Styles for the result container */
+.result-container {
+    margin-top: 20px; /* Space above the result container */
+    padding: 15px; /* Padding inside the result container */
+    background-color: #000000; /* Light grey background for the result */
+    border-radius: 4px; /* Rounded corners for the result container */
+    text-align: center; /* Center text within the result container */
+}
+
+/* Styles for the total cost paragraph */
+#totalCost {
+    font-size: 18px; /* Larger font size for the total cost */
+    color: #28a745; /* Green color for the total cost */
+    font-weight: bold; /* Make the total cost bold */
+}
