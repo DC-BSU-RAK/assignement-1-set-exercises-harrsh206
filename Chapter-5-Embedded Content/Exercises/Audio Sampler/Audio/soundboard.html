@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Audio Sampler</title>
+  <style>
+    body {
+      background-image: url("https://media.istockphoto.com/id/1822889082/vector/luxury-background-curved-shapes-lines-lights-and-shadows.jpg?s=612x612&w=0&k=20&c=jfMsPDaJITe72HyX6w2qQP7yT8rNJQlL4tUEYpttMMI=");
+      color: #ecf0f1;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      margin: auto;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      font-size: 2.5em;
+    }
+
+    #sampler {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr); /* Fixed 4 columns */
+      gap: 20px;
+      max-width: 1000px;
+      margin: auto;
+      flex-grow: 1;
+    }
+
+    .sample {
+      padding: 25px 35px;
+      cursor: pointer;
+      background: linear-gradient(to bottom, #a28700, #000000);
+      border: none;
+      border-radius: 12px;
+      text-align: center;
+      font-size: 1.1em;
+      color: white;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+      transition: transform 0.2s, box-shadow 0.2s;
+      outline: none;
+    }
+
+    .sample:hover,
+    .sample:focus {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    }
+
+    @media (max-width: 600px) {
+      #sampler {
+        grid-template-columns: 1fr; /* Stack on smaller screens */
+      }
+      .sample {
+        padding: 18px 25px;
+        font-size: 1em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Audio Sampler</h1>
+  <div id="sampler">
+    <button class="sample" data-audio="ah-ha.mp3">Ah ha!</button>
+    <button class="sample" data-audio="back-of-the-net.mp3">Back of the net!</button>
+    <button class="sample" data-audio="bangoutoforder.mp3">Bang out of order</button>
+    <button class="sample" data-audio="dan.mp3">Dan!</button>
+    <button class="sample" data-audio="emailoftheevening.mp3">Email of the evening!</button>
+    <button class="sample" data-audio="hellopartridge.mp3">Hello partridge!</button>
+    <button class="sample" data-audio="iateascotchegg.mp3">I ate a scotch egg!</button>
+    <button class="sample" data-audio="imconfused.mp3">I am confused!</button>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const samples = document.querySelectorAll('.sample');
+
+      samples.forEach(sample => {
+        sample.addEventListener('click', () => {
+          const audioFile = sample.dataset.audio;
+          const audio = new Audio(audioFile);
+          audio.play();
+        });
+      });
+    });
+  </script>
