@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadata for the document -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Page</title>
+
+    <!-- Adding some internal CSS for styling -->
+    <style>
+        /* Set the background color of the page */
+        body {
+            background-image: url("https://www.allrecipes.com/thmb/MkbGgNcGadAWdYw0aRZbo8WapHM=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/237311-slow-cooker-mac-and-cheese-DDMFS-4x3-9b4a15f2c3344c1da22b034bc3b35683.jpg");
+            font-family: Arial, sans-serif; /* Use a clean sans-serif font */
+            margin: 0; /* Center the content */
+            padding: 0; /* Space between the content */
+            color: #000000; /* Dark text color for contrast */
+        }
+
+        /* Style the header of the recipe */
+        h1 {
+            text-align: center; /* Center the recipe title */
+            color: #000000; /* Green color for the title */
+            padding-top: 20px; /* Space between the content */
+            text-shadow: 2px 2px 15px yellow;/* Shadows behind the texts */
+            font-family: "Brush Script MT", cursive; /* type of font used */
+        }
+
+        /* Style the description */
+        p {
+            text-align: center; /* Center the description */
+            font-size: 1.2em; /* Size of the font */
+            color: #ffffff; /* Slightly lighter color for the description */
+            padding: 10px 20px; /* Space between the content */
+            margin: 0 20px;/* Center the content */
+            font-family: "Times New Roman", Times, serif; /* Type of font used */
+        }
+
+        /* Style for section headers (e.g., Ingredients and Method) */
+        h2 {
+            color: #000000; /* Dark color for section headings */
+            font-size: 1.8em; /* Size of the font */
+            padding: 10px 20px; /* Space between the content */
+            margin-top: 40px; /* Center the content */
+            text-align: center; /* Align of the text */
+            font-family: "Brush Script MT", cursive; /* Type of font used */
+            text-shadow: 2px 2px 15px yellow; /* Shadows behind the texts */
+        }
+
+        /* Style the ingredients and method list */
+        ul, ol {
+            margin: 20px auto;/* Center the content */
+            width: 80%; /* Set a max width for the lists */
+            padding-left: 40px; /* Space between the content */
+            font-family: "Times New Roman", Times, serif; /* Type of font used */
+            background-color: rgb(198, 162, 0); /* Background color used */
+            border-radius: 20px; /* Rounded corners for a softer look */
+            box-shadow: 10px 10px 5px rgba(48, 48, 48, 0.685); /* Light shadow around the content */
+        }
+
+        /* Style each list item for better readability */
+        li {
+            font-size: 1.1em; /* Size of the font */
+            margin-bottom: 8px;/* Center of content */
+            font-family: "Times New Roman", Times, serif; /* Type of font used */
+        }
+
+        /* Add a box-shadow and padding for the overall body of the recipe */
+        .recipe-container {
+            background-color: #ba5802; /* White background for content area */
+            padding: 20px; /* Space between the content */
+            max-width: 800px; /* Limit the width of the content */
+            margin: 0 auto; /* Center the content */
+            box-shadow: 10px 10px 5px rgb(0, 0, 0); /* Light shadow around the content */
+            border-radius: 20px; /* Rounded corners for a softer look */
+            border: 5px dashed #f8db00; /* Type of border used */
+        }
+        
+        img {
+            display: block;
+            margin: auto;/* Center the content */
+            border: 5px dashed #ffffff; /* Type of border used */
+            border-radius: 10px;/* Rounded corners for a softer look */
+            box-shadow: 10px 10px 5px; /* shadow effect to a box */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Recipe Container -->
+    <div class="recipe-container">
+        <!-- Recipe title -->
+        <u><h1>Mac and Cheese</h1></u>
+        <!-- Description of the recipe -->
+        <p>soft, smooth, salty and umami in flavor, visually bright and glossy, has a rich 'cheesy' smell and makes a squelching noise when served</p>
+        <img src="https://www.seriouseats.com/thmb/_WO9JEI2V2i2bFBqfiPVwHbLvg0=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/20241107-SEA-The-Food-Labs-Ultra-Gooey-Stovetop-Mac-and-Cheese-Recipe-MorganHuntGlaze-2-16a276ff0ce34f7e988b0b74c37cd229.jpg" alt="Paris" width="400" height="300">
+
+        <!-- Ingredients section -->
+        <h2>Ingredients:</h2>
+        <!-- Unordered list for the ingredients -->
+        <ul>
+            <li>1 lb. dried elbow pasta</li>
+            <li>1/2 cup unsalted butter</li>
+            <li>1/2 cup all purpose flour</li>
+            <li>1 1/2 cups whole milk</li>
+            <li>2 1/2 cups half and half **see chef tips #1 below**</li>
+            <li>4 cups shredded medium cheddar cheese divided (measured after shredding)</li>
+            <li>2 cups shredded Gruyere cheese divided (measured after shredding)</li>
+            <li>1/2 Tbsp. salt</li>
+            <li>1/2 tsp. black pepper</li>
+            <li>1/4 tsp. paprika smoked paprika is our favorite!</li>
+        </ul>
+
+        <!-- Method section -->
+        <h2>Method:</h2>
+        <!-- Ordered list for the recipe steps -->
+        <ol>
+            <li> Preheat oven to 325 degrees F and grease a 3 qt baking dish (9x13").  Set aside.</li>
+            <li> In a large bowl, cream together the butter, granulated sugar, and brown sugar until light and fluffy.</li>
+            <li> While water is coming up to a boil, shred cheeses and toss together to mix, then divide into three piles.  Approximately 3 cups for the sauce, 1 1/2 cups for the inner layer, and 1 1/2 cups for the topping.</li>
+            <li> Melt butter in a large saucepan over MED heat.  Sprinkle in flour and whisk to combine.  Mixture will look like very wet sand.  Cook for approximately 1 minute, whisking often.  Slowly pour in about 2 cups or so of the half and half, while whisking constantly, until smooth.  Slowly pour in the remaining half and half plus the whole milk, while whisking constantly, until combined and smooth.
+            </li>
+            <li> Continue to heat over MED heat, whisking very often, until thickened to a very thick consistency.  It should almost be the consistency of a semi thinned out condensed soup.</li>
+            <li> Remove from the heat and stir in spices and 1 1/2 cups of the cheeses, stirring to melt and combine.  Stir in another 1 1/2 cups of cheese, and stir until completely melted and smooth.</li>
+            <li> In a large mixing bowl, combine drained pasta with cheese sauce, stirring to combine fully.  Pour half of the pasta mixture into the prepared baking dish.  Top with 1 1/2 cups of shredded cheeses, then top that with the remaining pasta mixture.
+            </li>
+            <li> Sprinkle the top with the last 1 1/2 cups of cheese and bake for 15 minutes, until cheesy is bubbly and lightly golden brown. </li>
+        </ol>
+
+</body>
+</html>
