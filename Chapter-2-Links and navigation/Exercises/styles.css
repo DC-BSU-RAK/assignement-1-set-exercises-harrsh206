@@ -1,0 +1,81 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif; /* type of the font used */
+    margin: 0; /* Center the content */
+    padding: 0; /* Space between the content */
+    background-color: #f82d2d; /* background color */
+}
+
+img {
+    display: block;
+    margin: auto; /* Center the content */
+    border: 5px solid #272626; /* Type of border used */
+    border-radius: 10px; /* Rounded corners for a softer look */
+    box-shadow: 10px 10px 5px; /* shadow effect to a box */
+}
+
+/* Navigation Bar Styles */
+nav {
+    background-color: #000000; /* background color */
+    padding: 10px 0; /* Space between the content */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0; /* Center the content */
+    padding: 0; /* Space between the content */
+    text-align: center; /* position of the text */
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;/* Center the content */
+}
+
+nav ul li a {
+    color: white; /* color of the font */
+    text-decoration: none; /* text decoration */
+    font-size: 18px; /* size of the font */
+}
+
+/* Button Style */
+.button {
+    background-color: #f2a900; /* background color */
+    padding: 10px 20px; /* Space between the content */
+    border-radius: 5px; /* smooth edge */
+}
+
+nav ul li a:hover {
+    color: #f2a900; /* color of the text */
+}
+
+nav ul li a.button:hover {
+    background-color: #000000; /* background color */
+}
+
+/* Section Styles */
+section {
+    padding: 20px; /* Space between the content */
+    margin: 20px;/* Center the content */
+    background-color: rgb(93, 32, 32); /* background color */
+    border-radius: 8px; /* smooth edge */
+    box-shadow:  4px 6px rgba(0, 0, 0, 0.507); /* color of the shadow */
+}
+
+section h2 {
+    font-size: 24px; /* size of the font */
+    color: #fffcfc;
+}
+
+section p, section ul {
+    font-size: 16px; /* Size of the font */
+    color: #ffffff; /* color of the font */
+}
+
+section ul {
+    padding-left: 20px; /* Space between the content */
+}
+
+section ul li {
+    margin-bottom: 5px;/* Center the content */
+}
